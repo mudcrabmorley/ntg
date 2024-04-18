@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-kanit text-stone-700 text-xl font-light;
+}
+
+header {
+  @apply text-lg;
+}
+
+.default-heading {
+  @apply text-3xl md:text-5xl text-heading text-center mb-6 font-extrabold uppercase;
+}
+
+.text-heading {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1.5px;
+}
+
+.phone-svg {
+  margin-top: 2px;
+}
+
+.btn-primary {
+  @apply border-4 flex items-center justify-center border-stone-50 text-center p-2 hover:scale-95 transition-all duration-300 ease-in-out;
+}
+
+.btn-secondary {
+  @apply border-4 flex items-center justify-center border-stone-700 text-center p-2 hover:scale-95 transition-all duration-300 ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-item {
+  @apply hover:text-red-600 transition-all duration-300 ease-in-out;
+}
+
+.spacer {
+  @apply h-14 md:h-12;
+}
+
+section {
+  @apply p-2;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.aspect {
+  @apply border border-black/10 rounded shadow-md relative z-10;
+}
+
+.aspect > img {
+  @apply pt-6;
+}
+
+.aspect-label {
+  @apply text-center text-heading text-stone-50 bg-red-600 p-2 uppercase absolute top-0 w-full;
+}
+
+input {
+  @apply rounded-none font-kanit shadow border-b-2 flex border-stone-50 w-full py-2 px-3 bg-inherit text-stone-50 focus:outline-none focus:bg-inherit focus:border-red-600;
+}
+
+textarea {
+  @apply rounded-none font-kanit shadow border-2 h-40 flex border-stone-50 w-full py-2 px-3 bg-inherit text-stone-50 focus:outline-none focus:bg-inherit focus:border-red-600;
+}
+
+.association {
+  @apply flex items-center justify-center p-2 max-w-[160px];
+}
+
+.bg-hero-position {
+  background-position: center 30%;
+}
+
+.about-gal-img {
+  @apply w-full object-cover;
+}
+
+.about-gal-img > img {
+  @apply w-full h-full object-cover;
+}
+
+/* AUTOFILL STYLING REMOVAL */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #0b0a09 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* iFRAME FOCUS REMOVAL */
+iframe:focus {
+  outline: none;
+}
