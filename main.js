@@ -1,3 +1,4 @@
+// HEAD/FOOTER IMPORT
 window.onload = function () {
   loadHeader();
   loadFooter();
@@ -18,3 +19,8 @@ function loadFooter() {
       document.getElementById("footer").innerHTML = data;
     });
 }
+
+// PAGE DISPLAY AFTER LOAD
+window.onload = function () {
+  document.body.style.display = "block";
+};
