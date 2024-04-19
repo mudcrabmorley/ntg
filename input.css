@@ -14,6 +14,17 @@ header {
   @apply text-lg;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .default-heading {
   @apply text-3xl md:text-5xl text-heading text-center mb-6 font-extrabold uppercase;
 }
