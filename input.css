@@ -43,7 +43,7 @@ header {
 }
 
 .btn-primary {
-  @apply border-4 flex items-center justify-center border-stone-50 text-center p-2 hover:scale-95 transition-all duration-300 ease-in-out;
+  @apply border flex items-center justify-center border-stone-50/80 rounded-sm text-center p-2 hover:scale-95 transition-all duration-300 ease-in-out;
 }
 
 .btn-secondary {
