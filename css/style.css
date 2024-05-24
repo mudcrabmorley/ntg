@@ -554,6 +554,10 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -667,6 +671,10 @@ video {
   display: grid;
 }
 
+.contents{
+  display: contents;
+}
+
 .hidden{
   display: none;
 }
@@ -715,6 +723,10 @@ video {
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .max-w-6xl{
@@ -847,6 +859,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -913,6 +929,10 @@ video {
 
 .bg-about-pattern{
   background-image: url('/images/about-hero.webp');
+}
+
+.bg-form-texture{
+  background-image: url('/images/red-texture-bg.webp');
 }
 
 .bg-gradient-to-r{
@@ -1051,6 +1071,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1170,6 +1195,7 @@ body{
 header{
   font-size: 1.125rem;
   line-height: 1.75rem;
+  min-height: ;
 }
 
 .sr-only {
@@ -1184,7 +1210,7 @@ header{
 }
 
 .default-heading{
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1263,6 +1289,8 @@ header{
 }
 
 .nav-item{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1273,14 +1301,15 @@ header{
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.spacer{
-  height: 3.5rem;
+@media (min-width: 768px){
+  .nav-item{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
-@media (min-width: 768px){
-  .spacer{
-    height: 3rem;
-  }
+.spacer{
+  height: 3.5rem;
 }
 
 section{
@@ -1406,6 +1435,12 @@ textarea:focus{
      object-fit: cover;
 }
 
+#collection-component-1716432989769 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /* AUTOFILL STYLING REMOVAL */
 
 input:-webkit-autofill,
@@ -1516,6 +1551,11 @@ iframe:focus {
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

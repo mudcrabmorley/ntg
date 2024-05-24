@@ -7,6 +7,7 @@ module.exports = {
         "hero-pattern": "url('/images/hero.webp')",
         "hero-pattern-lg": "url('/images/hero-lg.webp')",
         "about-pattern": "url('/images/about-hero.webp')",
+        "form-texture": "url('/images/red-texture-bg.webp')",
       }),
       fontFamily: {
         kanit: ["Kanit", "sans-serif"],
